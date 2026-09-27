@@ -1,0 +1,31 @@
+{
+  "name": "verdent-react-vite-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n proxy,vite \"node server/index.js\" \"vite --host 0.0.0.0\"",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "proxy": "node server/index.js",
+    "serve": "node server/index.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "express": "^4.22.3",
+    "firebase": "^12.18.0",
+    "hls.js": "^1.7.3",
+    "lucide-react": "^0.474.0",
+    "mpegts.js": "^1.8.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3",
+    "video.js": "^8.24.1",
+    "vite": "^6.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "concurrently": "^10.0.5"
+  }
+}
